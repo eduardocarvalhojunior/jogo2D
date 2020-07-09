@@ -8,6 +8,7 @@ class Inimigo extends Animacao {
         this.velocidade = 8
     }
 
+    //movimento do inimigo//
     move() {
       this.x = this.x - this.velocidade
 
