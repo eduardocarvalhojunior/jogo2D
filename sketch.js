@@ -3,12 +3,16 @@ let imagemPersonagem;
 let imagemInimigo;
 let imagemInimigoGrande;
 let imagemInimigoVoador;
+let imagemGameOver;
 let somDoPulo;
+
+let cenario;
 let somDoJogo;
 let personagem;
 let inimigo;
 let inimigoGrande;
 let inimigoVoador;
+let pontuacao;
 
 const matrizInimigo = [
   [0, 0],
@@ -125,6 +129,8 @@ function preload() {
 function setup() {
   createCanvas(windowWidth, windowHeight);
   cenario = new Cenario(imagemCenario, 3);
+  pontucao = new pontuacao()
+
   personagem = new Personagem(matrizPersonagem, imagemPersonagem, 
     0, 30, 110, 135, 220, 270);
   const inimigo = new Inimigo(matrizInimigo, imagemInimigo, 
@@ -155,6 +161,9 @@ function keyPressed (){
 function draw() {
   cenario.exibe();
   cenario.move();
+  pontucao.exibe();
+  pontucao.adicionarPonto();
+
   personagem.exibe();
   personagem.aplicaGravidade();
   
@@ -165,7 +174,7 @@ function draw() {
 
     if (personagem.estaColidindo(inimigo)){
       console.log('colidiu')
-      // noLoop()
+      noLoop()
     }
   })
 
