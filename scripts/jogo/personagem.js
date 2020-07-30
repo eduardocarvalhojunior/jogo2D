@@ -31,11 +31,21 @@ class Personagem extends Animacao {
     if(this.y > this.yInicial){
       this.y = this.yInicial
       this.pulos = 0
+      this.invencivel = false
     }
   }
 
+  tornarIvencivel(){
+    this.invencivel = true
+    setTimeout(() => {
+      this.invencivel = false
+    }, 1000)
+  }
   //função do encontro personagens// 
   estaColidindo(inimigo) {
+    if(this.invencivel){
+      return false
+    }
     const precisao = .7
     const colisao = collideRectRect(
       this.x, 

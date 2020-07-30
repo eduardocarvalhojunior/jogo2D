@@ -55,6 +55,9 @@ class Jogo {
         }
 
         if (personagem.estaColidindo(inimigo)) {
+            vida.perdeVida();
+            personagem.tornarInvencivel();
+            if(vida.vidas === 0 )
             image(imagemGameOver, width / 2 - 200, heigth / 3)
             noLoop()
         }
