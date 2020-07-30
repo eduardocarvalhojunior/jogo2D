@@ -4,7 +4,8 @@ class Jogo {
     }
     setup() {
         cenario = new Cenario(imagemCenario, 3);
-        pontucao = new pontuacao()
+        pontucao = new pontuacao();
+        vida = new Vida (3, 3);
 
         personagem = new Personagem(matrizPersonagem, imagemPersonagem,
             0, 30, 110, 135, 220, 270);
@@ -31,6 +32,7 @@ class Jogo {
     draw() {
         cenario.exibe();
         cenario.move();
+        vida.draw();
         pontucao.exibe();
         pontucao.adicionarPonto();
 
