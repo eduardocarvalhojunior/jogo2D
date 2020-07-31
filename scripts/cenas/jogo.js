@@ -5,7 +5,7 @@ class Jogo {
     setup() {
         cenario = new Cenario(imagemCenario, 3);
         pontucao = new pontuacao();
-        vida = new Vida (3, 3);
+        vida = new Vida(3, 3);
 
         personagem = new Personagem(matrizPersonagem, imagemPersonagem,
             0, 30, 110, 135, 220, 270);
@@ -57,8 +57,8 @@ class Jogo {
         if (personagem.estaColidindo(inimigo)) {
             vida.perdeVida();
             personagem.tornarInvencivel();
-            if(vida.vidas === 0 )
-            image(imagemGameOver, width / 2 - 200, heigth / 3)
+            if (vida.vidas === 0)
+                image(imagemGameOver, width / 2 - 200, heigth / 3)
             noLoop()
         }
     }

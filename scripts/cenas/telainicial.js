@@ -1,16 +1,17 @@
 class TelaInicial {
-    constructor(){
-
+    constructor() {
     }
-    draw(){
+
+    draw() {
         this._imagemDeFundo();
         this._texto();
         this._botao();
     }
-    _imagemDeFundo(){
+    _imagemDeFundo() {
         imagem(imagemTelaInicial, 0, 0, width, height);
     }
-    _texto(){
+
+    _texto() {
         textFont(fonteTelaInicial);
         textAline(CENTER);
         textSize(50);
@@ -19,7 +20,7 @@ class TelaInicial {
         Text('Hipsta', width / 2, height / 5 * 3);
     }
 
-    _botao(){
+    _botao() {
         botaoGerenciador.y = heigth / 7 * 5;
         botaoGerenciador.draw();
     }

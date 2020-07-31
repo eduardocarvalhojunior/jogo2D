@@ -19,6 +19,7 @@ let inimigoVoador;
 let pontuacao;
 
 let cenaAtual = 'jogo';
+
 let cenas;
 let telaInicial;
 let botaoGerenciador;
@@ -120,6 +121,5 @@ const matrizInimigoVoador = [
   [400, 600],
   [0, 750],
 ]
-
 
 const inimigos = []
