@@ -8,6 +8,7 @@
 
 ## 💻 Sobre o projeto
 
+
 - Sempre quis fazer um jogo e mostrar no meu portfólio.
 - No jogo decidi fazer usando sprites já prontos.
 - Também inclui um som de fundo, som de movimento etc.
@@ -15,7 +16,10 @@
 
 
 
+
 ### 🎨 Layout
+
+
 
 Me inspirei no curso da Alura Caelum.
 A estrutura foi feita em 4 dias.
@@ -23,7 +27,9 @@ Fui mudando de cenário ao longo do projeto atual, e estou bem satisfeito.
 
 ## 🛠 Tecnologias
 
+
 As seguintes ferramentas foram usadas na construção do projeto:
+
 
 - JavaScript
 - Css3
@@ -33,7 +39,9 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 
 
+
 ### Autor
+
 
 
 [Eduardo Carvalho](https://github.com/eduardocarvalhojunior)
